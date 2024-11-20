@@ -24,14 +24,13 @@ const HeaderFilter = () => {
         gap: "10px",
       }}
     >
-      {/* Dropdown Filters */}
       <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", alignItems: "flex-start" }}>
         {filters.map((filter, index) => (
           <div
             key={index}
             style={{
               flex: "0 1 auto",
-              width: "130px", // Reduced width to fit content
+              width: "130px",
             }}
           >
             <label
@@ -63,8 +62,6 @@ const HeaderFilter = () => {
             </select>
           </div>
         ))}
-
-        {/* Tag-like filter for "Method of Production" */}
         <div
           style={{
             flex: "0 1 auto",
@@ -98,7 +95,6 @@ const HeaderFilter = () => {
         </div>
       </div>
 
-      {/* Actions: Clear Filters and Toggle Buttons */}
       <div style={{ display: "flex", gap: "15px", alignItems: "center" }}>
         <button
           style={{
@@ -113,7 +109,6 @@ const HeaderFilter = () => {
           Clear filters
         </button>
 
-        {/* Toggle Buttons */}
         <div
           style={{
             display: "flex",

@@ -1,25 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+import SideBar from "./Components/SideBar";
+import Dashboard from "./Components/Dashboard";
+import FrequencyTable from "./Components/FrequencyTable";
+import HeaderBar from "./Components/HeaderBar";
+import HeaderFilter from "./Components/HeaderFilter";
+import RecommendationChart from "./Components/RecommendationChart";
+import TrackedFrequency from "./Components/TrackedFrequency";
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <SideBar />
+//       {/* <Dashboard /> */}
+//       <HeaderFilter />
+//       <HeaderBar />
+//       <RecommendationChart />
+//       <FrequencyTable />
+//       <TrackedFrequency />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+// import React from "react";
+// import SideBar from "./SideBar";
+// import HeaderBar from "./HeaderBar";
+// import HeaderFilter from "./HeaderFilter";
+// import RecommendationChart from "./RecommendationChart";
+// import FrequencyTable from "./FrequencyTable";
+// import TrackedFrequency from "./TrackedFrequency";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex h-screen bg-gray-900">
+      {/* Sidebar */}
+      <SideBar />
+
+      {/* Main Content Section */}
+      <div className="w-[95%] h-screen overflow-y-auto">
+        {/* Header */}
+        <HeaderBar />
+
+        {/* Filters Section */}
+        <HeaderFilter />
+
+        {/* Recommendation Chart */}
+        <RecommendationChart />
+
+        {/* Frequency Table */}
+        <FrequencyTable />
+
+        {/* Tracked Frequency */}
+        <TrackedFrequency />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

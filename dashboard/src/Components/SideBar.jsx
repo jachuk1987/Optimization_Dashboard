@@ -1,9 +1,16 @@
 import React from "react";
-import { FaHome, FaProjectDiagram, FaBell, FaClock, FaCog, FaSignOutAlt } from "react-icons/fa";
+import {
+  FaHome,
+  FaProjectDiagram,
+  FaBell,
+  FaClock,
+  FaCog,
+  FaSignOutAlt,
+} from "react-icons/fa";
 
 const SideBar = () => {
   return (
-    <div className="h-screen w-20 bg-gray-900 flex flex-col justify-between items-center py-4">
+    <div className="h-screen w-[5%] bg-gray-900 flex flex-col justify-between items-center py-4 sticky top-0">
       {/* Top Section */}
       <div className="space-y-8">
         {/* Logo */}
