@@ -49,7 +49,7 @@ function FrequencyTable() {
         <td className="p-3 bg-orange-300 text-gray-900">{row.incChange}</td>
         <td className="p-3 flex items-center">
           <span className="mr-2 text-gray-300">{row.runLifeDays}</span>
-          <button className="bg-blue-500 text-white px-4 py-1 border border-blue-500 rounded-md text-sm hover:bg-blue-400">
+          <button className="text-blue-400 px-4 py-1 border border-blue-500 rounded-md text-sm hover:bg-white-100">
             Running
           </button>
         </td>
@@ -125,7 +125,7 @@ function FrequencyTable() {
       <div className="mt-6 flex justify-between items-center">
         <button
           onClick={() => handlePageChange(currentPage - 1)}
-          className={`px-4 py-2 bg-blue-500 text-white rounded-md text-sm ${
+          className={`px-4 py-2 bg-gray-700 text-white rounded-md text-sm ${
             currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
           }`}
           disabled={currentPage === 1}
