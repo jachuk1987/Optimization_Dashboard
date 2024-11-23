@@ -8,7 +8,6 @@ import RecommendationChart from "./Components/RecommendationChart";
 import TrackedFrequency from "./Components/TrackedFrequency";
 import Dashboard from "./Components/Controlroom";
 import ConneXia from "./Components/ConneXia";
-import ChangePointDetectionSummary from "./Components/ChangePointDetectionSummary";
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
         <FrequencyTable />
         <TrackedFrequency />
         <ConneXia />
-        <ChangePointDetectionSummary />
         
         {/* <Dashboard/> */}
       </div>
