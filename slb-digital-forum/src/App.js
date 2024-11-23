@@ -6,7 +6,6 @@ import HeaderBar from "./Components/HeaderBar";
 import HeaderFilter from "./Components/HeaderFilter";
 import RecommendationChart from "./Components/RecommendationChart";
 import TrackedFrequency from "./Components/TrackedFrequency";
-import ConneXia from "./Components/ConneXia";
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
         <RecommendationChart />
         <FrequencyTable />
         <TrackedFrequency /> */}
-        <ConneXia />
         
       </div>
     </div>
