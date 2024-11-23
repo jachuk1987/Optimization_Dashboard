@@ -6,6 +6,7 @@ import HeaderBar from "./Components/HeaderBar";
 import HeaderFilter from "./Components/HeaderFilter";
 import RecommendationChart from "./Components/RecommendationChart";
 import TrackedFrequency from "./Components/TrackedFrequency";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -14,11 +15,15 @@ function App() {
 
       {/* Main Content Section */}
       <div className="w-[96%] h-screen overflow-y-auto">
-        {/* <HeaderBar />
+        <Routes>
+          <Route path="/" />
+        </Routes>
+
+        <HeaderBar />
         <HeaderFilter />
         <RecommendationChart />
         <FrequencyTable />
-        <TrackedFrequency /> */}
+        <TrackedFrequency />
         
       </div>
     </div>
