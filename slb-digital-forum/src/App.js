@@ -6,7 +6,6 @@ import HeaderBar from "./Components/HeaderBar";
 import HeaderFilter from "./Components/HeaderFilter";
 import RecommendationChart from "./Components/RecommendationChart";
 import TrackedFrequency from "./Components/TrackedFrequency";
-import Dashboard from "./Components/Controlroom";
 import ConneXia from "./Components/ConneXia";
 
 function App() {
@@ -16,14 +15,13 @@ function App() {
 
       {/* Main Content Section */}
       <div className="w-[96%] h-screen overflow-y-auto">
-        <HeaderBar />
+        {/* <HeaderBar />
         <HeaderFilter />
         <RecommendationChart />
         <FrequencyTable />
-        <TrackedFrequency />
+        <TrackedFrequency /> */}
         <ConneXia />
         
-        {/* <Dashboard/> */}
       </div>
     </div>
   );
