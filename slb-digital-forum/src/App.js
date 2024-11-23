@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import SideBar from "./Components/SideBar";
+import FrequencyTable from "./Components/FrequencyTable";
+import HeaderBar from "./Components/HeaderBar";
+import HeaderFilter from "./Components/HeaderFilter";
+import RecommendationChart from "./Components/RecommendationChart";
+import TrackedFrequency from "./Components/TrackedFrequency";
+import Dashboard from "./Components/Controlroom";
+import ConneXia from "./Components/ConneXia";
+import ChangePointDetectionSummary from "./Components/ChangePointDetectionSummary";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex h-screen bg-gray-900">
+      <SideBar />
+
+      {/* Main Content Section */}
+      <div className="w-[96%] h-screen overflow-y-auto">
+        <HeaderBar />
+        <HeaderFilter />
+        <RecommendationChart />
+        <FrequencyTable />
+        <TrackedFrequency />
+        <ConneXia />
+        <ChangePointDetectionSummary />
+        
+        {/* <Dashboard/> */}
+      </div>
     </div>
   );
 }
 
 export default App;
+
