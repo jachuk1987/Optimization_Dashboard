@@ -8,8 +8,7 @@ import {
   FaSignOutAlt,
   FaLocationArrow
 } from "react-icons/fa";
-import { Link } from 'react-router-dom';
-
+import {Link} from 'react-router-dom'
 const SideBar = () => {
   return (
     <div className="h-screen w-[4%] bg-gray-900 flex flex-col justify-between items-center py-4 sticky top-0">

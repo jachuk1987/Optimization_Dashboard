@@ -5,6 +5,17 @@ const TrackedFrequency = () => {
   const rowsPerPage = 11; // Number of rows per page
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  const newdata = [
+    { motorLoad: 59, driveLoad: "-", mtT: 175.0, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: 52, driveLoad: "-", mtT: 174.0, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: "-", driveLoad: "-", mtT: 175.8, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: "-", driveLoad: "-", mtT: 190.8, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: "-", driveLoad: "-", mtT: 171.5, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: "-", driveLoad: "-", mtT: 202.6, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: "-", driveLoad: "-", mtT: 178.4, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+    { motorLoad: "-", driveLoad: "-", mtT: 171.5, equipment: "Pump 1: Stark / 400 / P60ER / 288 stages, Motor Amp: 84" },
+  ];
+
 
   // Sample Data (repeat or adjust as needed for testing)
   const data = Array.from({ length: 230 }, (_, i) => ({
@@ -47,9 +58,9 @@ const TrackedFrequency = () => {
   };
 
   return (
-    <div className="p-6 bg-gray-900 min-h-screen">
+    <div className="p-6 bg-gray-900 ">
       {/* Header */}
-      <div className="flex justify-between items-center mb-1">
+      <div className="flex justify-between items-center mb-4">
         <div>
           <div className="text-white font-semibold">
             Tracked frequency changes (230)
@@ -64,17 +75,15 @@ const TrackedFrequency = () => {
       </div>
 
       {/* Search Bar */}
-      <div className="flex justify-end items-center mb-1">
+      <div className="flex justify-end items-center mb-4">
         <div className="relative">
-          <FaSearch className="absolute left-3 top-2 text-gray-400 "/>
+          <FaSearch className="absolute left-3 top-3 text-gray-400" />
           <input
-
             type="text"
             placeholder="Search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="  pl-10 pr-4 h-9 border border-gray-600 rounded-md focus:outline-none w-80 bg-black"
-
+            className="bg-gray-800 text-white pl-10 pr-4 py-2 rounded-md focus:outline-none w-64"
           />
         </div>
       </div>
@@ -121,7 +130,7 @@ const TrackedFrequency = () => {
                 <td className="py-2 px-4">{row.dnom}</td>
                 <td className="py-2 px-4">{row.curveStatus}</td>
                 <td className="py-2 px-4 text-center">
-                  <button className=" hover:underline">
+                  <button className="text-red-500 hover:underline">
                     <FaTrash />
                   </button>
                 </td>
@@ -136,8 +145,8 @@ const TrackedFrequency = () => {
         <button
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
-          className={`px-4 py-2 border w-40 h-10 rounded-md ${
-            currentPage === 1 ? " text-gray-500" : " hover:bg-gray-600"
+          className={`px-4 py-2 rounded-md ${
+            currentPage === 1 ? "bg-gray-700 text-gray-500" : "bg-gray-700 hover:bg-gray-600"
           }`}
         >
           Previous
@@ -147,10 +156,10 @@ const TrackedFrequency = () => {
             <button
               key={page}
               onClick={() => handlePageChange(page)}
-              className={`px-3 py-1 rounded-full ${
+              className={`px-3 py-1 rounded-md ${
                 currentPage === page
-                  ?"bg-gray-500 text-white  "
-                  : "bg-gray-900 text-gray-300 hover:bg-gray-600 "
+                  ? "bg-blue-500"
+                  : "bg-gray-700 hover:bg-gray-600"
               }`}
             >
               {page}
@@ -160,8 +169,8 @@ const TrackedFrequency = () => {
         <button
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
-          className={`px-4 py-2 border w-40 h-10 rounded-md ${
-            currentPage === totalPages ? " text-gray-500" : " hover:bg-gray-600"
+          className={`px-4 py-2 rounded-md ${
+            currentPage === totalPages ? "bg-gray-700 text-gray-500" : "bg-gray-700 hover:bg-gray-600"
           }`}
         >
           Next

@@ -1,7 +1,7 @@
 import React from "react";
 import { Scatter } from "react-chartjs-2";
 import { Chart as ChartJS, Tooltip, Legend, LinearScale, PointElement } from "chart.js";
-import { FaSearch , FiSearch} from "react-icons/fi";
+import { FaSearch } from "react-icons/fa";
 
 // Register Chart.js components
 ChartJS.register(Tooltip, Legend, LinearScale, PointElement);
@@ -99,25 +99,39 @@ const RecommendationChart = () => {
           marginBottom: "10px",
         }}
       >
-       
-        <p style={{ color: "#9E9E9E", fontSize: "14px", margin: 0, }}>
+        <u style={{color:"orange", }}>
+        <p style={{ color: "lightblue",marginBottom:"10px", fontSize: "14px", margin: 0,width:"200px" }}>
           Optimization opportunities
         </p>
-        <div className="flex items-center w-1/4 bg-black border border-gray-600 rounded-md px-3 py-2 ">
-          <FiSearch className="text-gray-400 mr-2" />
+        </u><span style={{color:"white",marginRight:"1100px"}}> Pwf/Hz</span>
+        
+        <div style={{ position: "relative", width: "200px" }}>
           <input
             type="text"
             placeholder="Search"
-            className="w-full text-sm text-gray-300 bg-black focus:outline-none mt-10px"
-            
+            style={{
+              width: "100%",
+              padding: "0.5rem 2rem 0.5rem 0.8rem", // Space for the icon
+              borderRadius: "4px",
+              border: "1px solid #ccc",
+              backgroundColor: "#212121",
+              color: "#fff",
+            }}
+          />
+          <FaSearch
+            style={{
+              position: "absolute",
+              top: "50%",
+              right: "10px", // Adjust for icon padding
+              transform: "translateY(-50%)",
+              color: "#9E9E9E",
+            }}
           />
         </div>
       </div>
-
       <div style={{ height: "400px" }}>
         <Scatter data={data} options={options} />
       </div>
-
     </div>
   );
 };

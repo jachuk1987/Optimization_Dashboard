@@ -32,12 +32,12 @@ function FrequencyTable() {
         className="border-b border-gray-600 hover:bg-gray-700"
       >
         <td className="p-3">
-          <button className="bg-cyan-600 text-white px-5 py-2 rounded-md text-sm hover:bg-cyan-700">
+          <button  style ={{backgroundColor:"#38BDF8"}}className="bg-blue-500 text-white px-5 py-2 rounded-md text-sm hover:bg-blue-400">
             Recommend
           </button>
         </td>
         <td className="p-3">
-          <input type="checkbox" className="w-4 h-4 " />
+          <input style={{backgroundColor:"red"}} type="checkbox" className="w-4 h-4" />
         </td>
         <td className="p-3">{row.wellName}</td>
         <td className="p-3">In Range</td>
@@ -49,12 +49,18 @@ function FrequencyTable() {
         <td className="p-3 bg-orange-300 text-gray-900">{row.incChange}</td>
         <td className="p-3 flex items-center">
           <span className="mr-2 text-gray-300">{row.runLifeDays}</span>
-          <button className=" border-green-500 text-green-500 px-4 py-1 border  rounded-md text-sm ">
-            Running
-          </button>
+          <button class="bg-transparent text-teal-400 border border-teal-400 rounded px-4 py-1 hover:bg-teal-800 hover:text-white transition">
+    Running
+  </button>
+
         </td>
         <td className="p-3">Fixed speed (1)</td>
         <td className="p-3">{row.motorLoad}</td>
+        <td className="p-3">-</td>
+        <td className="p-3">1572</td>
+        <td className="p-3">Pump 1:stork/400/PEDER/stages <br />
+        Motor Amp:84</td>
+        <td className="p-3">+</td>
       </tr>
     ));
   };
@@ -69,25 +75,24 @@ function FrequencyTable() {
   return (
     <div className="bg-gray-900 text-white min-h-screen p-6">
       {/* Heading */}
-      <h1 className="text-base font-semibold mb-2 text-left">
+      <h1 className="text-2xl font-semibold mb-6 text-left">
         Frequency Change (96)
       </h1>
 
       {/* Search Input */}
-      <div className="mb-1 flex justify-end ">
-        <div className="flex items-center w-1/4 bg-black border border-gray-600 rounded-md px-3 py-2 h-9">
+      <div className="mb-6 flex justify-end">
+        <div className="flex items-center w-1/4 bg-black border border-gray-600 rounded-md px-3 py-2">
           <FiSearch className="text-gray-400 mr-2" />
           <input
             type="text"
             placeholder="Search"
-            className="w-full text-sm text-gray-300 bg-black focus:outline-none  "
-            
+            className="w-10000px text-sm text-gray-300 bg-black focus:outline-none"
           />
         </div>
       </div>
 
       {/* Table */}
-      <table className="w-full border-collapse table-auto bg-gray-800 rounded-lg overflow-hidden shadow-lg text-sm">
+      <table className=" border-collapse table-auto bg-gray-800 rounded-lg overflow-hidden shadow-lg text-sm">
         <thead>
           <tr className="bg-gray-700 text-left border-b border-gray-600">
             <th className="p-3 font-medium text-gray-300">Task</th>
@@ -116,7 +121,10 @@ function FrequencyTable() {
             <th className="p-3 font-medium text-gray-300">
               PID Control Mode
             </th>
-            <th className="p-3 font-medium text-gray-300">Motor Load</th>
+            <th className="p-3 font-medium text-gray-300">Motor Load %</th>
+            <th className="p-3 font-medium text-gray-300-">Drive Load %</th>
+            <th className="p-3 font-medium text-gray-300">Mt T (degF)</th>
+            <th className="p-3 font-medium text-gray-300">Equipment</th>
           </tr>
         </thead>
         <tbody>{renderRows()}</tbody>
@@ -126,8 +134,8 @@ function FrequencyTable() {
       <div className="mt-6 flex justify-between items-center">
         <button
           onClick={() => handlePageChange(currentPage - 1)}
-          className={`px-4 py-2 border text-white rounded-md text-sm h-9 w-40 hover:bg-gray-600 ${
-            currentPage === 1 ? "opacity-50 cursor-not-allowed " : ""
+          className={`px-4 py-2 bg-gray-700 text-gray-500 text-white rounded-md text-sm ${
+            currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
           }`}
           disabled={currentPage === 1}
         >
@@ -138,10 +146,10 @@ function FrequencyTable() {
             <button
               key={index}
               onClick={() => handlePageChange(index + 1)}
-              className={`px-3 py-1 rounded-full text-sm ${
+              className={`px-3 py-1 rounded-md text-sm ${
                 currentPage === index + 1
-                  ? "bg-gray-500 text-white  "
-                  : "bg-gray-900 text-gray-300 hover:bg-gray-600 "
+                  ? "bg-blue-500 text-white"
+                  : "bg-gray-700 text-gray-300 hover:bg-gray-600"
               }`}
             >
               {index + 1}
@@ -150,8 +158,8 @@ function FrequencyTable() {
         </div>
         <button
           onClick={() => handlePageChange(currentPage + 1)}
-          className={`px-4 py-2 border text-white rounded-md text-sm h-9 w-40 hover:bg-gray-600${
-            currentPage === 10 ? "opacity-50 cursor-not-allowed h-9 w-40 hover:bg-gray-600" : ""
+          className={`px-4 py-2 bg-gray-700 text-gray-500 text-white rounded-md text-sm ${
+            currentPage === 10 ? "opacity-50 cursor-not-allowed" : ""
           }`}
           disabled={currentPage === 10}
         >

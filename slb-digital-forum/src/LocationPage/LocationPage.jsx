@@ -71,7 +71,7 @@ const customIcon = new L.Icon({
     { id: 5, lat: 32.7717, lng: -96.767, name: "Location 5" },
   ];
 
-const Locationpage = () => {
+const LocationPage = () => {
     const [activeTab, setActiveTab] = useState("emission");
   return (
     
@@ -223,4 +223,4 @@ const Locationpage = () => {
   );
 };
 
-export default Locationpage;
+export default LocationPage;

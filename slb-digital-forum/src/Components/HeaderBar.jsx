@@ -1,3 +1,4 @@
+// HeaderBar.jsx
 import React from "react";
 import { FaSyncAlt } from "react-icons/fa";
 
@@ -17,9 +18,6 @@ const HeaderBar = () => {
         fontSize: "16px",
         fontFamily: "Arial, sans-serif",
         borderBottom: "1px solid #2A2A2A",
-        position: "sticky", // Makes the header sticky
-        top: 0, // Sticks the header to the top
-        zIndex: 1000, // Ensures it stays above other content
       }}
     >
       {/* Title */}
