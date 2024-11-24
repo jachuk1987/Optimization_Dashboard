@@ -39,7 +39,7 @@ function FrequencyTable() {
             Recommend
           </button>
         </td>
-        
+
         <td className="p-3">
           <input style={{ backgroundColor: "red" }} type="checkbox" className="w-4 h-4" />
         </td>
