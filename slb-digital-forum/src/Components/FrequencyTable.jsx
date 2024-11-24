@@ -41,7 +41,7 @@ function FrequencyTable() {
 
         </td>
         <td className="p-3">
-          <input style={{ backgroundColor: "red" }} type="checkbox" className="w-4 h-4" />
+          <input style={{ backgroundColor: "#162233" }} type="checkbox" className="bg-[#162233] w-4 h-4" />
         </td>
         <td className="p-3">{row.wellName}</td>
         <td className="p-3">In Range</td>
