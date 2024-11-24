@@ -1,7 +1,6 @@
 import "./App.css";
 
 import SideBar from "./Components/SideBar";
-import Dashboard from "./Components/Dashboard";
 import FrequencyTable from "./Components/FrequencyTable";
 import HeaderBar from "./Components/HeaderBar";
 import HeaderFilter from "./Components/HeaderFilter";
@@ -22,7 +21,7 @@ function App() {
         <Routes>
           <Route path='/' />
           <Route path='/Maps' element={<LocationPage />} />
-          <Route path='/clock' element={<ClockPage />} />
+          <Route path='/Clock' element={<ClockPage />} />
 
         </Routes>
 

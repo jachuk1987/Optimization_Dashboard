@@ -8,7 +8,7 @@ import {
   FaSignOutAlt,
   FaLocationArrow
 } from "react-icons/fa";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 const SideBar = () => {
   return (
     <div className="h-screen w-[4%] bg-gray-900 flex flex-col justify-between items-center py-4 sticky top-0">
@@ -35,7 +35,7 @@ const SideBar = () => {
           </button>
           <button className="w-12 h-12 flex items-center justify-center hover:bg-gray-600">
             
-          <Link to={'/clock'}><FaClock className="text-white text-xl" /></Link>
+          <Link to={'/Clock'}><FaClock className="text-white text-xl" /></Link>
           </button>
           <button className="w-12 h-12 flex items-center justify-center hover:bg-gray-600">
             
