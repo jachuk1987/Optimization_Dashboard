@@ -38,8 +38,8 @@ function FrequencyTable() {
           >
             Recommend
           </button>
-
         </td>
+        
         <td className="p-3">
           <input style={{ backgroundColor: "red" }} type="checkbox" className="w-4 h-4" />
         </td>
@@ -150,8 +150,8 @@ function FrequencyTable() {
               key={index}
               onClick={() => handlePageChange(index + 1)}
               className={`px-3 py-1 rounded-md text-sm ${currentPage === index + 1
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+                ? "bg-blue-500 text-white"
+                : "bg-gray-700 text-gray-300 hover:bg-gray-600"
                 }`}
             >
               {index + 1}
