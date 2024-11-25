@@ -43,8 +43,8 @@ function FrequencyTable() {
         <td className="p-3">
           <input
             type="checkbox"
-            className="bg-[#162233] w-4 h-4 accent-[#126481]"
             style={{ backgroundColor: "#162233" }}
+            className="bg-[#162233] w-4 h-4 accent-[#126481]"
           />
         </td>
 
