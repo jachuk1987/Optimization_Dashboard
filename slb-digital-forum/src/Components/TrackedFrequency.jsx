@@ -130,7 +130,7 @@ const TrackedFrequency = () => {
                 <td className="py-2 px-4">{row.dnom}</td>
                 <td className="py-2 px-4">{row.curveStatus}</td>
                 <td className="py-2 px-4 text-center">
-                  <button className="text-red-500 hover:underline">
+                  <button className="text-white-500 hover:underline">
                     <FaTrash />
                   </button>
                 </td>
