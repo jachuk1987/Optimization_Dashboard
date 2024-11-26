@@ -214,7 +214,7 @@ const LocationPage = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default LocationPage;

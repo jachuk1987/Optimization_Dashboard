@@ -133,7 +133,7 @@ const RecommendationChart = () => {
         <Scatter data={data} options={options} />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default RecommendationChart;

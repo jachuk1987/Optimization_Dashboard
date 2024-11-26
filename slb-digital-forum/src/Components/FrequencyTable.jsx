@@ -173,7 +173,7 @@ function FrequencyTable() {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default FrequencyTable;
