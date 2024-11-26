@@ -180,7 +180,7 @@ const ClockPage = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default ClockPage;
