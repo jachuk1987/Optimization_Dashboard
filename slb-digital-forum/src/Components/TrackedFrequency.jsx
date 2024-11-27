@@ -177,7 +177,7 @@ const TrackedFrequency = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default TrackedFrequency;
