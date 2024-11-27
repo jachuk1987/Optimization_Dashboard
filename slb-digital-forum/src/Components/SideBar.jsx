@@ -58,7 +58,7 @@ const SideBar = () => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default SideBar;
