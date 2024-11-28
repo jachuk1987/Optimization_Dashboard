@@ -77,28 +77,64 @@ const Connexia = () => {
         </div>
 
         {/* Deferred Production */}
-        <div className="bg-gray-800 rounded-lg p-4 space-y-4">
-          <h2 className="text-lg font-semibold">Deferred Production</h2>
-          <div>
-            <p className="text-lg text-gray-400">Cumulative Deferred Production</p>
-            <p className="text-3xl font-bold text-red-500">18,297 bbl</p>
-          </div>
-          <ul className="space-y-4">
-            <li className="flex justify-between">
-              <span>GLACIER ROCK 15</span>
-              <span className="text-red-500">11,297 bbl</span>
-            </li>
-            <li className="flex justify-between">
-              <span>TITAN RIDGE 4</span>
-              <span className="text-red-500">6,200 bbl</span>
-            </li>
-            <li className="flex justify-between">
-              <span>HORIZON ECHO 7</span>
-              <span className="text-red-500">800 bbl</span>
-            </li>
-          </ul>
-          <button className="bg-blue-600 w-full py-2 rounded-lg">View All</button>
-        </div>
+<div className="bg-gray-800 rounded-lg p-4 space-y-4">
+  <h2 className="text-lg font-semibold">Deferred Production</h2>
+  <div>
+    <p className="text-gray-400">Cumulative Deferred Production</p>
+    <p className="text-3xl font-bold text-red-500">18,297 bbl</p>
+  </div>
+  <ul className="space-y-4">
+    {/* Well 1 */}
+    <li className="space-y-2">
+      <div className="flex justify-between items-center">
+        <span className="font-semibold">GLACIER ROCK 15</span>
+        <span className="text-red-500 font-bold">11,297 bbl</span>
+      </div>
+      <div className="w-full bg-gray-700 h-2 rounded-full">
+        <div className="bg-red-500 h-2 rounded-full" style={{ width: "70%" }}></div>
+      </div>
+      <div className="text-sm text-gray-400">
+        <p>Downtime: <span className="font-semibold">187 hrs</span></p>
+        <p>Reason: <span className="font-semibold">Pump Failure</span></p>
+      </div>
+      <button className="bg-blue-600 px-4 py-2 text-sm rounded-lg">View Details</button>
+    </li>
+
+    {/* Well 2 */}
+    <li className="space-y-2">
+      <div className="flex justify-between items-center">
+        <span className="font-semibold">TITAN RIDGE 4</span>
+        <span className="text-red-500 font-bold">6,200 bbl</span>
+      </div>
+      <div className="w-full bg-gray-700 h-2 rounded-full">
+        <div className="bg-red-500 h-2 rounded-full" style={{ width: "40%" }}></div>
+      </div>
+      <div className="text-sm text-gray-400">
+        <p>Downtime: <span className="font-semibold">124 hrs</span></p>
+        <p>Reason: <span className="font-semibold">Gas Interference</span></p>
+      </div>
+      <button className="bg-blue-600 px-4 py-2 text-sm rounded-lg">View Details</button>
+    </li>
+
+    {/* Well 3 */}
+    <li className="space-y-2">
+      <div className="flex justify-between items-center">
+        <span className="font-semibold">HORIZON ECHO 7</span>
+        <span className="text-red-500 font-bold">800 bbl</span>
+      </div>
+      <div className="w-full bg-gray-700 h-2 rounded-full">
+        <div className="bg-red-500 h-2 rounded-full" style={{ width: "10%" }}></div>
+      </div>
+      <div className="text-sm text-gray-400">
+        <p>Downtime: <span className="font-semibold">12 hrs</span></p>
+        <p>Reason: <span className="font-semibold">Hole in Tubing</span></p>
+      </div>
+      <button className="bg-blue-600 px-4 py-2 text-sm rounded-lg">View Details</button>
+    </li>
+  </ul>
+  <button className="bg-blue-600 w-full py-2 rounded-lg mt-4">View All</button>
+</div>
+
 
         {/* Schedule Section */}
         <div className="col-span-1 md:col-span-2 bg-gray-800 rounded-lg p-4 space-y-4">
