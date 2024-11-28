@@ -1,7 +1,7 @@
 import React from "react";
 import { FaExclamationTriangle, FaCheckCircle } from "react-icons/fa";
 
-const Dashboard = () => {
+const Connexia = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen p-6">
       {/* Header */}
@@ -135,4 +135,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Connexia;
