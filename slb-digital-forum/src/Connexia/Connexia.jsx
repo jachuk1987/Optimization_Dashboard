@@ -337,7 +337,7 @@ const Connexia = () => {
 
                 {/* Card 6 */}
                 <div className="bg-gray-800 p-4 rounded-lg">
-                    <h2 className="text-lg font-semibold mb-4">Predicted Production</h2>
+                    {/* <h2 className="text-lg font-semibold mb-4">Predicted Production</h2>
                     <div className="h-40">
                     </div>
                     <div className="mt-4 flex justify-between items-center">
@@ -348,7 +348,7 @@ const Connexia = () => {
                         <div>
                             <button className="bg-blue-600 px-4 py-2 rounded-lg">More Insights</button>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
