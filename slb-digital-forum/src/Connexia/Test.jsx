@@ -84,7 +84,7 @@ const ProductionOptimization = () => {
     );
 };
 
-const Connexia = () => {
+const Test = () => {
     return (
         <div className="bg-gray-900 text-white min-h-screen p-6">
             <header className="flex justify-between items-center pb-6 border-b border-gray-800">
@@ -122,4 +122,4 @@ const Connexia = () => {
     );
 };
 
-export default Connexia;
+export default Test;
