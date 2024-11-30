@@ -19,22 +19,22 @@ const SideBar = () => {
 
         {/* <div style={{marginLeft:"13px"}} className="text-orange-500 text-4xl ml-13px font-bold">X</div> */}
         <div>
-              <Link to="/X">
-                <div
-                  style={{ marginLeft: "13px" }}
-                  className="text-orange-500 text-4xl ml-13px font-bold cursor-pointer"
-                >
-                  X
-                </div>
-              </Link>
+          <Link to="/X">
+            <div
+              style={{ marginLeft: "13px" }}
+              className="text-orange-500 text-4xl ml-13px font-bold cursor-pointer"
+            >
+              X
             </div>
+          </Link>
+        </div>
         <div className="bg-gray-900 text-white min-h-screen p-6">
           <header className="flex justify-between items-center pb-6 border-b border-gray-800">
             {/* <div>
               <h1 className="text-3xl font-bold">Connexia</h1>
               <p className="text-gray-400">Hello, Jason</p>
             </div> */}
-            
+
           </header>
 
           {/* Rest of your dashboard */}
