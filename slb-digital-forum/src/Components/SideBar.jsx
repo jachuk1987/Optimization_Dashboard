@@ -28,19 +28,7 @@ const SideBar = () => {
             </div>
           </Link>
         </div>
-        <div className="bg-gray-900 text-white min-h-screen p-6">
-          <header className="flex justify-between items-center pb-6 border-b border-gray-800">
-            {/* <div>
-              <h1 className="text-3xl font-bold">Connexia</h1>
-              <p className="text-gray-400">Hello, Jason</p>
-            </div> */}
-
-          </header>
-
-          {/* Rest of your dashboard */}
-        </div>
-
-
+        
 
         {/* Icons */}
         <div className="space-y-6">
