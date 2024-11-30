@@ -27,15 +27,6 @@ const SideBar = () => {
           </button>
         </div>
 
-        {/* <div
-          style={{ marginLeft: "13px" }}
-          className="text-orange-500 text-4xl ml-13px font-bold"
-        >
-          X
-          <Link to={'/X'}><FaProjectDiagram className="text-white text-xl" /></Link>
-        </div> */}
-
-
 
         {/* Icons */}
         <div className="space-y-6">
