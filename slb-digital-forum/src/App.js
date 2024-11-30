@@ -21,6 +21,7 @@ function App() {
       <div className="w-[96%] h-screen overflow-y-auto">
         <Routes>
           <Route path='/' />
+          <Route path="/X" element={<Connexia />}/>
           <Route path='/Maps' element={<LocationPage />} />
           <Route path='/Clock' element={<ClockPage />} />
 
@@ -31,7 +32,6 @@ function App() {
         <RecommendationChart />
         <FrequencyTable />
         <TrackedFrequency />
-        <Connexia />
 
       </div>
 
