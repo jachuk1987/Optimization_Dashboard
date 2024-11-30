@@ -15,25 +15,16 @@ const SideBar = () => {
       {/* Top Section */}
       <div className="space-y-8 ">
         {/* Logo */}
-
-
-        {/* <div style={{marginLeft:"13px"}} className="text-orange-500 text-4xl ml-13px font-bold">X</div> */}
-        <div>
-          <Link to="/X">
-            <div
-              style={{ marginLeft: "13px" }}
-              className="text-orange-500 text-4xl ml-13px font-bold cursor-pointer"
-            >
-              X
-            </div>
-          </Link>
-        </div>
         
+        
+        <div style={{marginLeft:"13px"}} className="text-orange-500 text-4xl ml-13px font-bold">X</div>
 
+
+      
         {/* Icons */}
         <div className="space-y-6">
           <button className="w-12 h-12 flex items-center justify-center bg-gray-700 rounded-md hover:bg-gray-600">
-
+            
             <Link to={'/'}><FaHome className="text-white text-xl" /></Link>
           </button>
           <button className="w-12 h-12 flex items-center justify-center hover:bg-gray-600">
@@ -43,11 +34,11 @@ const SideBar = () => {
             <FaBell className="text-white text-xl" />
           </button>
           <button className="w-12 h-12 flex items-center justify-center hover:bg-gray-600">
-
-            <Link to={'/Clock'}><FaClock className="text-white text-xl" /></Link>
+            
+          <Link to={'/Clock'}><FaClock className="text-white text-xl" /></Link>
           </button>
           <button className="w-12 h-12 flex items-center justify-center hover:bg-gray-600">
-
+            
             <Link to={'/Maps'} ><FaLocationArrow className="text-white text-xl" /></Link>
           </button>
         </div>
