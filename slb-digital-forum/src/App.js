@@ -10,10 +10,10 @@ import { Routes, Route } from 'react-router-dom'
 import LocationPage from "./LocationPage/LocationPage";
 import ClockPage from "./ClockPage/ClockPage";
 import Connexia from "./Connexia/Connexia";
+
 function App() {
   return (
     <div className="flex h-screen bg-gray-900">
-
 
       <SideBar />
 
